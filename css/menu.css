@@ -1,0 +1,121 @@
+/*************************************
+Styles for menu navigation
+@author David Kullmann
+
+.nav-links - Root UL element
+.menu-link - Class for first-level drop-down LI
+.sub-menu - Class for second-leve drop-down LI
+
+Original selector:
+.nav-links li:hover li a{
+
+New selector:
+.nav-links .menu-link:hover .sub-menu a{
+
+
+*************************************/
+/* Header super-menu dropdown lists */
+.super-menu-header { width: 88px; height: 47px; background: #7d9116; color: #fff; padding: 5px 0 0 15px; font-family: 'NewsGothicNo.2W01-Roman'; font-size: 20px; }
+
+/* Style for the featured experts list */
+.featured-experts { float: left; width: 230px; }	
+.featured-experts .super-menu-header { margin: 20px 55px; }
+.featured-experts ul { margin-left: 60px; border-right: 1px solid #ebebeb; }
+.featured-experts ul li { height: 30px; }
+.featured-experts ul li a { font-family: 'NewsGothicNo.2W01-Roman'; font-size: 16px; color: #5f6365; padding: 3px; }
+.featured-experts ul li a:hover {  background: #7d9116; color: #fff; }
+
+.nav-links { position: absolute; top: 75px; right: 0px;  font-size: 15px; }
+.nav-links .menu-link { float: left; margin-left: 100px; width: 80px; }
+
+.nav-links .menu-link .sub-menu {
+	display:none;
+	height:auto;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	position:absolute;
+	z-index:200;
+}
+
+.nav-links .menu-link:hover .sub-menu { display:block; }
+
+.nav-links .menu-link > a {
+	display: block;
+	margin: 0;
+	padding-top: 10px;
+	height: 42px;
+	text-align: center;
+}
+/*.nav-links .sub-menu .menu-link:hover a, */
+.nav-links .menu-link > a:hover { background: #7d9116; color: #fff; }
+
+.nav-links .menu-link:hover ul{ display:block; }
+
+/* Shadow and Border Radius from http://css3generator.com/ */
+.super-menu {
+	margin-left: -100px;
+	width: 720px;
+	height: 360px;
+	border: 2px solid #879a2a;
+	background: #fff;
+	/* Shadow */
+	-webkit-box-shadow: 0px 0px 40px 0px #999999;
+	-moz-box-shadow: 0px 0px 40px 0px #999999;
+	box-shadow: 0px 0px 40px 0px #999999;
+	/* Radius */
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 15px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 50px;
+	-webkit-border-radius: 0px 15px 0px 50px;
+	border-radius: 0px 15px 0px 50px;
+}
+.nav-links .menu-link .menu-link {
+	display:block;
+	float:none;
+	margin:0px;
+	padding:0px;
+}
+.nav-links {
+/*	border:none;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;*/
+}
+.nav-links ul{
+	/*background:#333333;
+	height:35px;
+	list-style:none;
+	margin:0;
+	padding:0;*/
+}
+.nav-links li{
+	/*float:left;
+	padding:0px;*/
+}
+.nav-links li:hover li a{
+/*	background:none;
+*/
+}
+.nav-links li ul a{
+/*	display:block;
+	height:35px;
+	font-size:12px;
+	font-style:normal;
+	margin:0px;
+	padding:0px 10px 0px 15px;
+	text-align:left;*/
+}
+.nav-links li ul a:hover, .nav-links li ul li:hover a{
+/*	background:#2580a2 url('images/hover_sub.gif') center left no-repeat;
+	border:0px;
+	color:#ffffff;
+	text-decoration:none;*/
+}
+.nav-links p{
+/*	clear:left;
+*/}

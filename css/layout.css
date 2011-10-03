@@ -1,0 +1,158 @@
+/*************************************
+Styles for main page structures and layouts
+@author David Kullmann
+
+@colors
+Greens:
+	#7d9116 - Category Navigation, some heaer background
+Grays:
+	#e7e7e7 - Some outlines (example: search)
+	#393e40 - Text (featured experts)
+	#4b5052 - Text (Blog posts)
+	#333	- Text
+	#383d3f - Text
+	#5f6365 - Text ('experts' dropdown nav, ei-press)
+	
+@fonts - imported from webfonts.fonts.com
+
+	'NewsGothicNo.2W01-Light 710401'	News Gothic Light
+	'News Gothic MT W01 Bold'			News Gothic Bold
+	'NewsGothicNo.2W01-Roman'			News Gothic Roman
+
+	'BaskervilleLTW02-Uprigh'			Baskerville Regular
+	'Baskerville W01 Italic'			Baskerville Italic
+
+*************************************/
+body { width: 1028px; margin: 0 auto; }
+
+ul { list-style: none; }
+
+.header { position: relative; height: 120px; }
+
+.logo { position: absolute; left: 30px; top: 50px; width: 255px; height: 70px; }
+
+/* Not a big fan of absolute positioning but better than floating for this -DK */
+.login-links { position: absolute; top: 15px; right: 40px;  font-size: 11px; }
+.login-links li { float: left; margin-right: 95px; }
+
+.login-links li a, .nav-links li a { color: #393e3f; text-decoration: none; } 
+
+.search-form { position: absolute; top: 150px; right: 30px; }
+.search-form .search { width: 115px; height: 22px; border: 1px solid #e7e7e7; outline: none; }
+.search-form .input, .search-form .submit { float: right; }
+
+.search-button { height: 26px; width: 26px; font-size: 0; border: 1px solid #e7e7e7; border-right: none; cursor: pointer;
+	background: url(../img/layout/magnifying-glass.png) no-repeat center center;
+}
+
+/*************************************
+Sidewide Elements
+@author David Kullmann
+*************************************/
+/** Primary Banner - gradient generated from http://www.colorzilla.com/gradient-editor/ **/
+.primary-banner {
+	font-family: 'Baskerville W01 Italic';
+	font-size: 24px;
+	color: #fff;
+	padding: 2px 16px;
+	background: #82acf2; /* Old browsers */
+	background: -moz-linear-gradient(top, #82acf2 0%, #5585d9 32%, #5484d2 66%, #82acf2 96%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#82acf2), color-stop(32%,#5585d9), color-stop(66%,#5484d2), color-stop(96%,#82acf2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #82acf2 0%,#5585d9 32%,#5484d2 66%,#82acf2 96%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #82acf2 0%,#5585d9 32%,#5484d2 66%,#82acf2 96%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #82acf2 0%,#5585d9 32%,#5484d2 66%,#82acf2 96%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82acf2', endColorstr='#82acf2',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #82acf2 0%,#5585d9 32%,#5484d2 66%,#82acf2 96%); /* W3C */
+	border: 2px solid #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.expert-splash { background: #7d9116; color: #fff;  }
+
+/*************************************
+Homepage
+@author David Kullmann
+*************************************/
+.homepage-header { color: #393e40; font-size: 32px; margin-top: 25px; }
+
+.homepage-content { overflow: hidden; background: url(../img/layout/homepage-background.png) no-repeat center 40px; min-height: 960px; }
+
+/** All slides **/
+.slideshow { border: 1px solid #e8ecd1; width: 982px; margin: 40px 22px 0; height: 410px; }
+.slideshow .slide { position: relative; width: 982px; height: 408px; }
+
+/** Slide 1 **/
+.video-chat-image { float: left; margin-top: -35px; }
+
+/** Had to add another div to center-align the spans/hgroup and have extra backgrounds for custom shadows **/
+.stephen-dubner-info { position: absolute; left: 160px; top: 255px; background: url(../img/layout/appointments-available-shadow.png) no-repeat center 100px; width: 260px; height: 150px; }
+.stephen-dubner-info .primary-banner { margin: 0 auto; display: block; width: 200px; }
+
+.stephen-dubner {  width: 190px; height: 85px; padding: 10px; margin: 0 auto; }
+.stephen-dubner .baskerville-italic { font-size: 24px; }
+.stephen-dubner .name { font-size: 28px; }
+.stephen-dubner h4 { font-size: 18px; line-height: 27px; }
+
+.homepage-experts { width: 600px; float: left; margin-left: 28px; }
+.homepage-experts li { width: 250px; height: 105px; margin: 12px 0 0 50px; float: left; }
+.homepage-experts li img { width: 90px; height: 90px; float: left; border: 7px solid #fff; }
+.homepage-experts .thumb-headers { float: left; width: 130px; margin: 20px 0 0 10px; }
+.homepage-experts .thumb-headers h3 { font-size: 18px; font-weight: normal; color: #333; }
+.homepage-experts .thumb-headers h4 { font-size: 12px; font-weight: normal; color: #383d3f; }
+
+/** Slide 2 **/
+.steven-levitt-image { float: left; }
+.steven-levitt-info { width: 280px; position: absolute; top: 293px; left: 20px; }
+.steven-levitt { width: 200px; padding: 10px 0; margin: 0 auto; text-align: center; }
+.steven-levitt h3 { font-size: 28px; font-weight: normal; }
+.steven-levitt h4 { font-size: 18px; font-weight: normal; line-height: 24px;}
+
+.steven-levitt-appointments { position: absolute; top: 350px; right: 75px; width: 250px; height: 50px;
+	background: url(../img/layout/appointments-available-shadow.png) no-repeat center center; }
+.steven-levitt-appointments .primary-banner { margin: 0 auto; display: block; width: 215px; }
+
+.economics-experts { width: 635px; float: left; margin: 90px 0 0 25px; }
+.economics-experts li { width: 190px; height: 105px; padding: 12px 0 0 20px; float: left;
+	background: url(../img/layout/thumb-shadow.png) no-repeat 7px center; }
+.economics-experts li img { width: 73px; height: 74px; float: left; border: 7px solid #fff; }
+.economics-experts .thumb-headers { width: 90px; margin: 10px 0 0 10px; float: left; }
+.economics-experts .thumb-headers h3 { font-size: 18px; font-weight: normal; }
+.economics-experts .thumb-headers h4 { font-size: 12px; font-weight: normal; }
+
+.economics-header { width: 600px; height: 70px; position: absolute; right: 0px; top: 10px; }
+.economics-header h3 { font-size: 46px; margin-bottom: 10px; }
+.economics-header h4 { font-size: 20px; }
+
+.category-nav { width: 1005px; height: 36px; margin: 0 auto; background: #7d9116; }
+.category-nav li { float: left;  }
+.category-nav li a { display: block; width: 130px; padding-top: 9px; height: 26px; text-align: center; color: white; text-decoration: none; }
+.category-nav li:first-child a { font-weight: bold; }
+.category-nav li:last-child { margin-left: 50px; }
+
+.featured-content { float: left; width: 560px; height: 530px; margin-left: 25px; padding: 15px; }
+.featured-content p { font-size: 22px; color: #393e40; margin: 20px 0 40px; }
+.featured-content p strong { font-family: 'News Gothic MT W01 Bold'; }
+
+.blog-post { float: left; width: 240px; height: 360px; margin-right: 20px; padding-right: 19px; position: relative; }
+.blog-post h3 { font-size: 24px; width: 145px; height: 67px; }
+.blog-post p { font-size: 17px; color: #4b5052; }
+.blog-post .more { position: absolute; bottom: 0; right: 40px; text-decoration: none; color: #4b5052; font-size: 14px; }
+
+.sidebar { position: relative; float: left; width: 388px; height: 660px; background: url(../img/layout/sidebar-background.png) no-repeat 0 50px; }
+
+.video { background: url(../img/layout/video-shadow.png) no-repeat -10px 40px; padding: 20px 0; }
+.video h3 { margin: 8px 245px 0px 10px; padding: 1px 5px; background: #797d7f; color: white; font-size: 17px; font-weight: normal; line-height: 23px;  }
+.video-button {  margin-left: 5px; }
+
+
+.news-articles { padding: 17px 7px; position: absolute; left: -5px; background: url(../img/layout/news-shadow.png) no-repeat top center; }
+/* Super sad that we need another style for this =( -David Kullmann */
+.news-background { width: 347px; height: 380px; background: #fff; padding: 15px 25px; }
+.news-article { width: 130px; float: left; margin-right: 30px; }
+.news-article p { color: #727677; height: 90px; }
+
+.ei-press { margin-bottom: 10px; }
+.ei-press .press-logo { vertical-align: middle; }
+.ei-press .text { color: #5f6365; font-size: 22px; font-weight: normal; }
