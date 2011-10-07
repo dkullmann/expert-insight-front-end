@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<title>Expert Insight | Featured Experts: Poker</title><link href="https://expertinsight.dev/" rel="canonical" />		
+		<link rel="stylesheet" type="text/css" href="css/html5-reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu.css" />
+		
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="css/ie.css" />
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="http://fast.fonts.com/jsapi/cc0f6ec7-d6a8-45ed-bc34-109224cdc395.js"></script>
+		<script src="/js/main.js"></script>
+	</head>
+	
+	<!-- body class is set to the controller and action -->
+	<body class="pages-c display-a">
+		
+		<header class="header">
+			
+			<h1 class="logo">Expert Insight</h1>
+			
+			<nav class='main-nav'>
+				
+				<ul class="login-links">
+					
+					<li class='login'>
+						
+						<a href="/users/login">login</a>
+						<form id='login-form'>
+							
+							<label for='username'>User Name:</label>
+							<input name='username' />
+							
+							<label for='password'>Password:</label>
+							<input name='username' type='password' />
+							
+							<button name='submit'>log in</button>
+							
+							<p>Forgot password? Click <a href=''>here</a></p>
+							
+						</form>
+						
+					</li>
+					
+					<!--
+					<li class='logged-in'>
+					
+						<a>Welcome, Jay Greenspan</a>
+					
+						<form id='logout-form'>
+						
+							<ul>
+							
+								<li class='appointments'><a href=''>View appointments</a></li>
+								
+								<li class='contact'><a href=''>Contact information</a></li>
+								
+								<li class='password'><a href=''>Change password</a></li>
+								
+							</ul>
+							
+							<button name='submit'>log out</button>
+						
+						</form>
+					
+					</li>
+					-->
+					
+					<li><a href="http://www.expertinsight.com/blog/">blog</a></li>
+					
+				</ul>
+				
+				<ul class="nav-links">
+					
+					<li class="menu-link">
+						<a href="/pages/our-experts">our experts</a>
+						<ul class="sub-menu">
+							
+							<li class="menu-link">
+								
+								<div class="super-menu">
+									
+									<nav class="featured-experts">
+									
+										<h2>featured experts</h2>
+									
+										<ul>
+											<li><a href="/categories/view"><h3>Economists</h3></a></li>
+											<li><a href="/categories/view"><h3>Entreprenuership</h3></a></li>
+											<li><a href="/categories/view"><h3>Writers and Editors</h3></a></li>
+											<li><a href="/categories/view"><h3>Poker</h3></a></li>
+											<li><a href="/categories/view"><h3>Investing</h3></a></li>
+											<li><a href="/categories/view"><h3>College Admissions</h3></a></li>
+										</ul>
+									
+									</nav>
+									
+									<nav class='all-experts'> 
+										
+										<h2>all experts</h2>
+										
+										<ul class='first-of-type'>											
+											<li>
+												<a href=''>
+													<h3>Sciences</h3>
+													<p>Anthropologist, Mathematicians, Education, Geo-Science</p>
+												</a>
+											</li>
+											<li>
+												<a href=''>
+													<h3>Arts</h3>
+													<p>Musicians, Phototgraphers, Film, Writers and Editors</p>
+												</a>
+											</li>
+											<li>
+												<a href=''>
+													<h3>Economics &amp; Finance</h3>
+													<p>Economists, Investing, Tax Advice</p>
+												</a>
+											</li>
+										</ul>
+										<ul>
+											<li>
+												<a href=''>
+													<h3>Business Consulting</h3>
+													<p>Consumer Behavior, Entrepreneurship, Executive Coaches, International Business, Marketing and Sales, Government, Inventing, Non-profit Leadership</p>
+												</a>
+											</li>
+											<li>
+												<a href=''>
+													<h3>Self-help</h3>
+													<p>Event Planning, Relationship Experts, The Home, Psychologists</p>
+												</a>
+											</li>											
+											<li>
+												<a href=''>
+													<h3>Media</h3>
+													<p>Web Development, Social Media, Print and TV</p>
+												</a>
+											</li>
+										</ul>
+										
+									</nav>
+									
+								</div>
+								
+							</li>
+							
+						</ul>
+						
+					</li>
+					
+					<li class="menu-link"><a href="/pages/our-experts">services</a></li>
+					<li class="menu-link"><a href="/pages/our-experts">become an expert</a></li>
+					<li class="menu-link"><a href="/pages/our-experts">about us</a></li>
+					
+				</ul>
+				
+			</nav>
+			
+			<!-- Search input is an form -->
+			<form class="search-form" id="UserDisplayForm" method="post" action="/users" accept-charset="utf-8">
+				<div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>
+				<div class="input text">
+					<label for="UserName"></label>
+					<input name="data[User][name]" type="text" class="search" id="UserName" />
+				</div>
+				<div class="submit">
+					<input class="search-button" type="submit" value="Search Experts" />
+				</div>
+			</form>
+							
+		</header>		
+		
+		<h2 class="main-header">Jeff Miron</h2>
+		<h3 class="main-subheader">Harvard Economist</h3>
+		
+		<div class="expert-profile content">
+		
+			<section class='profile'>
+			
+				<div class='photo shader'>				
+					<img src='/img/test-assets/profile.jpg' width='266' height='281' alt='Jeff Miron' />
+					<a>appointments available</a>				
+				</div>
+				
+				<blockquote>
+					<p>I love to talk about government policy, and why most of it is misguided.</p>
+					<p>I teach an under-graduate course on libertarianism in the economics program at Harvard, to rave reviews.</p>
+				</blockquote>
+				
+				<div class='dates'>
+				
+					<a href='' class='book-now'>book now</a>
+					
+					<div class='details'>
+						<p>All times central standard time</p>
+						<p class='price'>$400.00/hr.</p>
+					</div>
+				
+					<ol>
+					
+						<li class='shader'><a href=''><span>Sept. 25</span> 6pm-7pm</a></li>
+						
+						<li class='shader'><a href=''><span>Sept. 26</span> 6pm-7pm</a></li>
+						
+						<li class='shader'><a href=''><span>Sept. 27</span> 6pm-7pm</a></li>
+						
+						<li class='shader'><a href=''><span>Sept. 28</span> 6pm-7pm</a></li>
+					
+					</ol>
+				
+				</div>
+			
+			</section>
+			
+			<h4>Biography</h4>
+			
+			<p>Dr. Miron has published more than 25 articles in refereed journals and 50 op-eds in CNN.com, nytimes.com, forbes.com, and other outlets. Dr. Miron’s commentary on economic policy has appeared on CNN, CNBC, MSNBC, NPR, Bloomberg, and Fox television, BBC radio, and in dozens of other television, radio, and print media around the world.</p>
+			
+			<p>Dr. Miron’s area of expertise is the economics of libertarianism. He has written extensively on the economic case against drug prohibition, and he has been a vocal critic of the Treasury bailout and the Obama administration’s fiscal stimulus.</p>
+			
+			<p>Dr. Miron is also a star teacher. In four of the past five years, the Senior Class at Harvard has chosen him as one of their favorite teachers. His most popular offering is a course titled “A Libertarian Perspective on Economic and</p>
+			
+			<h4>Accomplishments</h4>
+			
+			<p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+			
+			<dl>
+			
+				<dt>Education:</dt>
+				<dd>PHD, Economics, Harvard University</dd>
+				
+				<dt>Item two:</dt>
+				<dd>Sed molestie augue sit amet leo consequat posuere. Vestibulum</dd>
+				
+				<dt>Again:</dt>
+				<dd>More details</dd>
+				
+			</dl>
+			
+			<section class='more'>
+			
+				<h5>More Economists</h5>
+				
+				<ul>
+					
+					<li>
+						<a href=''>
+							<img src='/img/test-assets/placeholder.jpg' width='100' height='100' alt='a person' />
+							<span>John Smith</span>
+						</a>					
+					</li>
+					
+					<li>
+						<a href=''>
+							<img src='/img/test-assets/placeholder.jpg' width='100' height='100' alt='a person' />
+							<span>John Smith</span>
+						</a>					
+					</li>
+					
+					<li>
+						<a href=''>
+							<img src='/img/test-assets/placeholder.jpg' width='100' height='100' alt='a person' />
+							<span>John Smith</span>
+						</a>					
+					</li>
+					
+					<li>
+						<a href=''>
+							<img src='/img/test-assets/placeholder.jpg' width='100' height='100' alt='a person' />
+							<span>John Smith</span>
+						</a>					
+					</li>
+					
+					<li>
+						<a href=''>
+							<img src='/img/test-assets/placeholder.jpg' width='100' height='100' alt='a person' />
+							<span>John Smith</span>
+						</a>					
+					</li>
+					
+				</ul>
+			
+			</section>
+			
+		</div>
+		
+		<div class='profile-sidebar'>
+		
+			<h5>How it Works</h5>
+			
+			<div class='shader'>
+			
+				<img src='/img/layout/how-it-works-wide.png' />
+			
+			</div>
+			
+			<h5>Jeff Miron in the News</h5>
+			
+			<img src='/img/test-assets/news.jpg' width='227' height='173' />
+			
+			<h5>Jeff Miron Books, Speech</h5>
+			
+			<ul class='books'>
+			
+				<li>
+				
+					<img src='/img/test-assets/book1.jpg' alt='book title' />
+					
+					<p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+					
+				</li>
+				
+				<li>
+				
+					<img src='/img/test-assets/book2.jpg' alt='book title' />
+					
+					<p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+					
+				</li>
+			
+			</ul>
+			
+			<h6>Speeches</h6>
+			
+			<p><a href=''>Duis autem vel eum iriure dolor in hendrerit in vulputate</a></p>
+			
+			<h6>Twitter</h6>
+			
+			<ol class='twitter'>
+			
+				<li><a href=''>@Miron</a>  Duis autem vel eum iriure dolor in hendrerit in vulputate <a href=''>t.co4yd</a></li>
+				
+				<li><a href=''>@Miron</a>  Eum iriure dolor in hendrerit in vulputate <a href=''>t.3d4yd</a></li>
+			
+			</ol>
+		
+		</div>	
+		
+		<script type="text/javascript" src="js/jquery/jquery.cycle.all.js"></script>
+		<script type="text/javascript">
+			//<![CDATA[
+			
+			jQuery(function() {
+				jQuery('.slideshow').cycle();				
+				// jQuery('.slideshow').cycle({ startingSlide: 1 }).cycle('stop');
+			});
+			
+			
+			//]]>
+		</script>
+			
+	</body>
+	
+</html>

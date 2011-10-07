@@ -1,0 +1,77 @@
+/* IE FIXES */
+
+/* menu fixes */
+
+.header {
+	zoom: 1;
+	z-index: 100;
+	position: relative;
+}
+
+.slideshow {
+	z-index: 10;	
+}
+
+/* slideshow fix */
+
+.slideshow .slide {
+	background: url(../img/layout/homepage-background.png) no-repeat center top;
+}
+
+/* shadow fixes */
+
+.expert-profile .profile .photo {
+	padding: 20px 15px 26px;
+	left: -30px;
+	top: -35px;
+	background: url(/img/ie/shadow-profile.png) center no-repeat;
+}
+
+.expert-profile .profile .photo a {
+	margin: 0px 30px 41px;
+}
+
+.expert-profile .profile .dates {
+	margin-bottom: 5px;
+}
+
+.expert-profile .profile .dates a.book-now {
+	margin: 0px;
+}
+
+.expert-profile .profile .dates ol {
+	position: relative;
+	left: -5px;
+	width: 330px;
+	margin: 0px;
+}
+
+.expert-profile .profile .dates li {
+	padding: 15px 6px;
+	margin-left: 0px;
+	background: url(/img/ie/profile-date-button.png) center no-repeat;
+}
+
+.expert-profile .profile .dates li a {
+	background: none;
+	border: none;
+}
+
+.profile-sidebar .shader {
+	padding: 18px;
+	margin: -10px -18px 0px 0px;
+	background: url(/img/ie/shadow-hiw-wide.png) center no-repeat;
+}
+
+.expert-grid .shader {
+	background: url(/img/ie/shadow-experts.png) center top no-repeat;
+	padding: 20px 25px 30px;
+	margin: -20px -25px 0px;
+}
+
+.how-it-works.shader {
+	padding: 15px 18px 25px;
+	margin: -15px 0px 0px -18px;
+	width: 196px;
+	background: url(/img/ie/shadow-hiw.png) top left no-repeat;
+}

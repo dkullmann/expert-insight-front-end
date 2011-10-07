@@ -15,68 +15,243 @@ New selector:
 
 *************************************/
 /* Header super-menu dropdown lists */
-.super-menu-header { width: 88px; height: 47px; background: #7d9116; color: #fff; padding: 5px 0 0 15px; font-family: 'NewsGothicNo.2W01-Roman'; font-size: 20px; }
 
-/* Style for the featured experts list */
-.featured-experts { float: left; width: 230px; }	
-.featured-experts .super-menu-header { margin: 20px 55px; }
-.featured-experts ul { margin-left: 60px; border-right: 1px solid #ebebeb; }
-.featured-experts ul li { height: 30px; }
-.featured-experts ul li a { font-family: 'NewsGothicNo.2W01-Roman'; font-size: 16px; color: #5f6365; padding: 3px; }
-.featured-experts ul li a:hover {  background: #7d9116; color: #fff; }
+/* general layout & styling */
 
-.nav-links { position: absolute; top: 75px; right: 0px;  font-size: 15px; }
-.nav-links .menu-link { float: left; margin-left: 100px; width: 80px; }
-
-.nav-links .menu-link .sub-menu {
-	display:none;
-	height:auto;
-	padding:0px;
-	margin:0px;
-	border:0px;
-	position:absolute;
-	z-index:200;
-}
-
-.nav-links .menu-link:hover .sub-menu { display:block; }
-
-.nav-links .menu-link > a {
-	display: block;
-	margin: 0;
-	padding-top: 10px;
-	height: 42px;
-	text-align: center;
-}
-/*.nav-links .sub-menu .menu-link:hover a, */
-.nav-links .menu-link > a:hover { background: #7d9116; color: #fff; }
-
-.nav-links .menu-link:hover ul{ display:block; }
-
-/* Shadow and Border Radius from http://css3generator.com/ */
 .super-menu {
-	margin-left: -100px;
+	display: none;
 	width: 720px;
 	height: 360px;
 	border: 2px solid #879a2a;
+	margin-left: -33px;
 	background: #fff;
 	/* Shadow */
 	-webkit-box-shadow: 0px 0px 40px 0px #999999;
 	-moz-box-shadow: 0px 0px 40px 0px #999999;
 	box-shadow: 0px 0px 40px 0px #999999;
 	/* Radius */
-	-moz-border-radius-topleft: 0px;
-	-moz-border-radius-topright: 15px;
-	-moz-border-radius-bottomright: 0px;
-	-moz-border-radius-bottomleft: 50px;
+	-moz-border-radius: 0px 15px 0px 50px;
 	-webkit-border-radius: 0px 15px 0px 50px;
 	border-radius: 0px 15px 0px 50px;
 }
+
+.nav-links .menu-link:hover .super-menu {
+	display: block;
+}
+
+.super-menu nav { 
+	float: left;
+	margin: 20px 0px 0px 30px;
+	font-family: 'NewsGothicNo.2W01-Roman'; 
+}
+
+.super-menu h2 { 
+	width: 77px; 
+	height: 47px; 
+	background: #7d9116; 
+	color: #fff; 
+	padding: 5px 0 0 15px;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.super-menu ul h3 { 
+	font-size: 16px;
+	padding: 3px 6px;
+	line-height: 30px;
+}
+
+.super-menu ul a:hover h3 { 
+	background: #7d9116; 
+	color: #fff; 
+}
+
+.super-menu li a {
+	color: #5f6365;
+}
+
+.super-menu li p {
+	font-size: 13px;
+	padding-left: 6px;
+	margin-bottom: 5px;
+}
+
+/* featured experts */
+
+.featured-experts {
+	width: 140px;
+}
+
+/* all experts */
+
+.all-experts {
+	padding-left: 30px;
+	border-left: 1px solid #ebebeb; 
+}
+
+.all-experts ul {
+	width: 250px;
+	float: left;
+	color: #5F6365;
+	line-height: 1.3;
+}
+
+.all-experts ul.first-of-type {
+	width: 150px;
+	padding-right: 20px;
+	margin-right: 20px;
+	border-right: 1px solid #ebebeb; 
+}
+
+/* links */
+
+.nav-links { 
+	position: absolute; 
+	top: 75px; 
+	right: 0px; 
+	font-size: 15px;
+	z-index: 500;
+}
+
+.nav-links .menu-link { 
+	float: left; 
+	margin-left: 100px; 
+	width: 80px; 
+}
+
+.nav-links .menu-link > a {
+	display: block;
+	margin: 0;
+	padding: 10px 10px 0px;
+	height: 42px;
+}
+/*.nav-links .sub-menu .menu-link:hover a, */
+.nav-links .menu-link > a:hover { background: #7d9116; 
+	color: #fff; 
+	}
+
+.nav-links .menu-link:hover ul{ display:block; 
+	}
+
+
 .nav-links .menu-link .menu-link {
 	display:block;
 	float:none;
 	margin:0px;
 	padding:0px;
 }
+
+.login-links {
+	z-index: 1000;
+	top: 5px;
+	right: -5px;
+}
+
+.login-links li > a {
+	padding: 10px;
+	display: block;
+}
+
+.login-links li > a:hover {
+	background: #879A2A;
+	color: #fff;
+}
+
+.login-links .login {
+	position: relative;
+}
+
+.login-links form {
+	display:none;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	background: #fbfbfb;
+	border: 2px #879A2A solid;
+	padding: 20px;
+	width: 220px;
+	border-radius: 0px 10px 0px 25px;
+}
+
+.login-links li:hover form {
+	display: block;
+}
+
+.login-links label {
+	width:60px;
+	line-height: 20px;
+	float: left;
+	clear: left;
+	display: block;
+	margin: 0px 0px 10px;
+}
+
+.login-links input {
+	float: right;
+	width: 140px;
+	height: 12px;
+	padding: 3px;
+	margin: 0px 0px 10px;
+	border: 1px solid #AFB1B2;
+	background: #fff;
+}
+
+.login-links button {
+	clear: both;
+	float: right;
+	border: none;
+	color: #fff;
+	display: block;
+	width: 70px;
+	height: 25px;
+	text-align: center;
+	background: #5585D9;
+	box-shadow: inset 0px 0px 6px rgba(255,255,255,0.7);
+	font-family: 'Baskerville W01 Italic';
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.login-links p {
+	clear: both;
+	padding: 10px 0px 0px 72px;
+}
+
+.login-links p a {
+	text-decoration: underline;
+}
+
+.login-links .logged-in ul {
+	width: 100%;
+	clear: both;
+}
+
+.login-links .logged-in li {
+	margin: 0px 0px 10px;
+}
+
+.login-links .logged-in li a {
+	display: block;
+	font-size: 12px;
+	line-height: 33px;
+	text-decoration: underline;
+	padding: 0px 0px 0px 50px;
+	background: url(/img/layout/logged-clock.png) center left no-repeat;
+}
+
+.login-links .logged-in li a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+.login-links .logged-in li.contact a {
+	background-image: url(/img/layout/logged-contact.png);
+}
+
+.login-links .logged-in li.password a {
+	background-image: url(/img/layout/logged-lock.png);
+}
+
 .nav-links {
 /*	border:none;
 	border:0px;

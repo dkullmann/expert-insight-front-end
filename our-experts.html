@@ -2,15 +2,14 @@
 <html>
 	<head>
 		
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Expert Insight | Home</title><link href="https://expertinsight.dev/" rel="canonical" />		
-		<link rel="stylesheet" type="text/css" href="css/html5-reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/layout.css" />
-		<link rel="stylesheet" type="text/css" href="css/menu.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Expert Insight | Home</title><link href="https://expertinsight.dev/" rel="canonical" />		
+	<link rel="stylesheet" type="text/css" href="css/html5-reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu.css" />
 		
 		<!--[if lt IE 9]>
-		<link rel="stylesheet" type="text/css" href="css/ie.css" />
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
 		<script type="text/javascript" src="js/jquery.tools.min.js"></script>		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>		<script type="text/javascript" src="http://fast.fonts.com/jsapi/cc0f6ec7-d6a8-45ed-bc34-109224cdc395.js"></script>		
@@ -21,14 +20,14 @@
 		
 		<header class="header">
 			
-			<h1 class="logo"><img src="img/logos/logo.png" alt="Expert Insight" /></h1>
+			<h1 class="logo">Expert Insight</h1>
 			
-			<nav class="nav-menu">
+			<nav class='main-nav'>
 				
 				<ul class="login-links">
 					
-					<!--
 					<li class='login'>
+						
 						<a href="/users/login">login</a>
 						<form id='login-form'>
 							
@@ -43,9 +42,10 @@
 							<p>Forgot password? Click <a href=''>here</a></p>
 							
 						</form>
+						
 					</li>
-					-->
 					
+					<!--
 					<li class='logged-in'>
 					
 						<a>Welcome, Jay Greenspan</a>
@@ -67,79 +67,89 @@
 						</form>
 					
 					</li>
+					-->
 					
 					<li><a href="http://www.expertinsight.com/blog/">blog</a></li>
 					
 				</ul>
 				
 				<ul class="nav-links">
+					
 					<li class="menu-link">
 						<a href="/pages/our-experts">our experts</a>
-						<div class="super-menu">
+						<ul class="sub-menu">
 							
-							<nav class="featured-experts">
-							
-								<h2>featured experts</h2>
-							
-								<ul>
-									<li><a href="/categories/view"><h3>Economists</h3></a></li>
-									<li><a href="/categories/view"><h3>Entreprenuership</h3></a></li>
-									<li><a href="/categories/view"><h3>Writers and Editors</h3></a></li>
-									<li><a href="/categories/view"><h3>Poker</h3></a></li>
-									<li><a href="/categories/view"><h3>Investing</h3></a></li>
-									<li><a href="/categories/view"><h3>College Admissions</h3></a></li>
-								</ul>
-							
-							</nav>
-							
-							<nav class='all-experts'> 
+							<li class="menu-link">
 								
-								<h2>all experts</h2>
+								<div class="super-menu">
+									
+									<nav class="featured-experts">
+									
+										<h2>featured experts</h2>
+									
+										<ul>
+											<li><a href="/categories/view"><h3>Economists</h3></a></li>
+											<li><a href="/categories/view"><h3>Entreprenuership</h3></a></li>
+											<li><a href="/categories/view"><h3>Writers and Editors</h3></a></li>
+											<li><a href="/categories/view"><h3>Poker</h3></a></li>
+											<li><a href="/categories/view"><h3>Investing</h3></a></li>
+											<li><a href="/categories/view"><h3>College Admissions</h3></a></li>
+										</ul>
+									
+									</nav>
+									
+									<nav class='all-experts'> 
+										
+										<h2>all experts</h2>
+										
+										<ul class='first-of-type'>										
+											<li>
+												<a href=''>
+													<h3>Sciences</h3>
+													<p>Anthropologist, Mathematicians, Education, Geo-Science</p>
+												</a>
+											</li>
+											<li>
+												<a href=''>
+													<h3>Arts</h3>
+													<p>Musicians, Phototgraphers, Film, Writers and Editors</p>
+												</a>
+											</li>
+											<li>
+												<a href=''>
+													<h3>Economics &amp; Finance</h3>
+													<p>Economists, Investing, Tax Advice</p>
+												</a>
+											</li>
+										</ul>
+										<ul>
+											<li>
+												<a href=''>
+													<h3>Business Consulting</h3>
+													<p>Consumer Behavior, Entrepreneurship, Executive Coaches, International Business, Marketing and Sales, Government, Inventing, Non-profit Leadership</p>
+												</a>
+											</li>
+											<li>
+												<a href=''>
+													<h3>Self-help</h3>
+													<p>Event Planning, Relationship Experts, The Home, Psychologists</p>
+												</a>
+											</li>											
+											<li>
+												<a href=''>
+													<h3>Media</h3>
+													<p>Web Development, Social Media, Print and TV</p>
+												</a>
+											</li>
+										</ul>
+										
+									</nav>
+									
+								</div>
 								
-								<ul class='first-of-type'>											
-									<li>
-										<a href=''>
-											<h3>Sciences</h3>
-											<p>Anthropologist, Mathematicians, Education, Geo-Science</p>
-										</a>
-									</li>
-									<li>
-										<a href=''>
-											<h3>Arts</h3>
-											<p>Musicians, Phototgraphers, Film, Writers and Editors</p>
-										</a>
-									</li>
-									<li>
-										<a href=''>
-											<h3>Economics &amp; Finance</h3>
-											<p>Economists, Investing, Tax Advice</p>
-										</a>
-									</li>
-								</ul>
-								<ul>
-									<li>
-										<a href=''>
-											<h3>Business Consulting</h3>
-											<p>Consumer Behavior, Entrepreneurship, Executive Coaches, International Business, Marketing and Sales, Government, Inventing, Non-profit Leadership</p>
-										</a>
-									</li>
-									<li>
-										<a href=''>
-											<h3>Self-help</h3>
-											<p>Event Planning, Relationship Experts, The Home, Psychologists</p>
-										</a>
-									</li>											
-									<li>
-										<a href=''>
-											<h3>Media</h3>
-											<p>Web Development, Social Media, Print and TV</p>
-										</a>
-									</li>
-								</ul>
-								
-							</nav>
+							</li>
 							
-						</div>
+						</ul>
 					</li>
 					<li class="menu-link"><a href="/pages/our-experts">services</a></li>
 					<li class="menu-link"><a href="/pages/our-experts">become an expert</a></li>
@@ -149,14 +159,20 @@
 			</nav>
 			
 			<!-- Search input is an form -->
-			<form class="search-form" id="UserDisplayForm" method="post" action="/users" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>			<div class="input text"><label for="UserName"></label><input name="data[User][name]" type="text" class="search" id="UserName" /></div>			<div class="submit"><input class="search-button" type="submit" value="Search Experts" /></div>			</form>						
-		</header>
-		
-		
-<!-- jQuery slideshow -->
+			<form class="search-form" id="UserDisplayForm" method="post" action="/users" accept-charset="utf-8">
+				<div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>
+				<div class="input text">
+					<label for="UserName"></label>
+					<input name="data[User][name]" type="text" class="search" id="UserName" />
+				</div>
+				<div class="submit">
+					<input class="search-button" type="submit" value="Search Experts" />
+				</div>
+			</form>
+							
+		</header>		
 
-
-<h2 class="homepage-header">Private Video Chats with World-Class Experts</h2>
+		<h2 class="homepage-header">Private Video Chats with World-Class Experts</h2>
 
 <div class="homepage-content">
 
@@ -367,7 +383,7 @@
 
 	<p>Expert Insight provides <strong>access to leaders</strong> in all industries and professions. Securely <strong>schedule an appointment</strong> on our site, then return to have your <strong>video chat</strong> through our exclusive technology.</p>
 	
-	<article class='blog-post first-of-type'>
+	<article class="blog-post">
 		
 		<header>
 			<h3>Our Experts in the News</h3>
