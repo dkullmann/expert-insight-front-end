@@ -42,7 +42,7 @@ body > header h1 {
 	 left: -5px;
 	 width: 261px; 
 	 height: 75px;
-	 background: url(/img/logos/logo.png) center no-repeat;
+	 background: url(../img/logos/logo.png) center no-repeat;
 	 text-indent: -9999px; font-size: 0px; line-height: 0;
 }
 
@@ -294,7 +294,7 @@ Homepage
 	position: absolute;
 	width: 20px;
 	height: 50px;
-	background: url(/img/layout/tip-arrow.png) center left no-repeat;
+	background: url(../img/layout/tip-arrow.png) center left no-repeat;
 	top: 70px;
 	left: -20px;
 }
@@ -348,12 +348,12 @@ a.sn {
 	float: left;
 	width: 32px;
 	height: 32px;
-	background: url(/img/layout/icon-facebook.jpg) center no-repeat;
+	background: url(../img/layout/icon-facebook.jpg) center no-repeat;
 	text-indent: -9999px; font-size: 0px; line-height: 0;
 }
 
 a.sn.twitter {
-	background-image: url(/img/layout/icon-twitter.jpg);
+	background-image: url(../img/layout/icon-twitter.jpg);
 	margin-left: 15px;
 }
 
@@ -455,7 +455,7 @@ a.sn.twitter {
 	bottom: 0px;
 	left: 0px;
 	text-align: center;
-	background: #7c9211 url(/img/layout/profile-gradient.png) center top repeat-x;
+	background: #7c9211 url(../img/layout/profile-gradient.png) center top repeat-x;
 	color: #fff;
 	font-family: 'Baskerville W01 Italic', georgia, serif;
 }
@@ -607,7 +607,7 @@ a.sn.twitter {
 	display: inline-block;
 	padding-right: 10px;
 	line-height: 16px;
-	background: url(/img/layout/more-caret.png) bottom right no-repeat;
+	background: url(../img/layout/more-caret.png) bottom right no-repeat;
 }
 
 .profile-sidebar {
@@ -742,7 +742,7 @@ ul.subcategories a:hover {
 	font-family: 'Baskerville W01 Italic', serif;
 	color: #393E3F;
 	padding-right: 12px;
-	background: url(/img/layout/arrow-blk.png) center right no-repeat;
+	background: url(../img/layout/arrow-blk.png) center right no-repeat;
 	margin: 10px 5px 0px 0px;
 }
 
@@ -759,7 +759,7 @@ ul.subcategories a:hover {
 	text-indent: -9999px; font-size: 0px; line-height: 0;
 	width: 17px;
 	height: 74px;
-	background: url(/img/layout/scroller-left.png) no-repeat center;
+	background: url(../img/layout/scroller-left.png) no-repeat center;
 	cursor: pointer;
 }
 
@@ -769,7 +769,7 @@ ul.subcategories a:hover {
 
 .scroller .next {
 	right: -17px;
-	background-image: url(/img/layout/scroller-right.png);
+	background-image: url(../img/layout/scroller-right.png);
 }
 
 .scroller:before {
@@ -982,7 +982,7 @@ ol.controls {
 }
 
 ol.controls li {
-	background: url(/img/layout/experts-tab.png) center no-repeat;
+	background: url(../img/layout/experts-tab.png) center no-repeat;
 	text-indent: -9999px; font-size: 0px; line-height: 0;
 	width: 11px;
 	height: 11px;
@@ -996,5 +996,5 @@ ol.controls li.current {
 }
 
 ol.controls li.current, ol.controls li:hover {
-	background-image: url(/img/layout/experts-tab-selected.png);
+	background-image: url(../img/layout/experts-tab-selected.png);
 }

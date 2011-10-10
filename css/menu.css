@@ -236,7 +236,7 @@ New selector:
 	line-height: 33px;
 	text-decoration: underline;
 	padding: 0px 0px 0px 50px;
-	background: url(/img/layout/logged-clock.png) center left no-repeat;
+	background: url(../img/layout/logged-clock.png) center left no-repeat;
 }
 
 .login-links .logged-in li a:hover {
@@ -245,11 +245,11 @@ New selector:
 }
 
 .login-links .logged-in li.contact a {
-	background-image: url(/img/layout/logged-contact.png);
+	background-image: url(../img/layout/logged-contact.png);
 }
 
 .login-links .logged-in li.password a {
-	background-image: url(/img/layout/logged-lock.png);
+	background-image: url(../img/layout/logged-lock.png);
 }
 
 .nav-links {
