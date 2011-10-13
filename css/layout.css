@@ -86,6 +86,23 @@ Sitewide Elements
 
 .expert-splash { background: #7d9116; color: #fff;  }
 
+.button {
+	color: #fff;
+	display: block;
+	width: 101px;
+	line-height: 25px;
+	text-align: center;
+	text-decoration: none;
+	background: #5585D9;
+	box-shadow: inset 0px 0px 6px 2px rgba(255,255,255,0.6);
+	font-family: 'Baskerville W01 Italic', serif;
+	font-size: 16px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	border-radius: 3px;
+}
+
 /*************************************
 Homepage
 @author David Kullmann
@@ -997,4 +1014,291 @@ ol.controls li.current {
 
 ol.controls li.current, ol.controls li:hover {
 	background-image: url(../img/layout/experts-tab-selected.png);
+}
+
+/* our services */
+
+.our-services.content {
+	width: 660px;
+	margin: 0px 0px 30px;
+	float: left;
+	clear: left;
+	font-size: 20px;
+	position: relative;
+}
+
+.our-services.content h3 {
+	font-size: 22px;
+	margin: 0px 0px 10px;
+}
+
+.our-services.content p {
+	margin-top: 0px;
+	padding-right: 140px;
+	color: #393E3F;
+}
+
+.our-services.content ol {
+	font-size:28px;
+	overflow: hidden;
+	margin: 30px 0px 0px -70px;
+}
+
+.our-services.content ol li {
+	float: left;
+	width: 160px;
+	margin-left: 70px;
+}
+
+.our-services.content ol h4 {
+	height: 50px;
+	font-size: 20px;
+}
+
+.our-services.content ol p {
+	font-size: 18px;
+	margin-top: 20px;
+	padding: 0px;
+}
+
+.our-services.content .shader {
+	color: #fff;
+	display: block;
+	padding: 0px 25px;
+	line-height: 33px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: lowercase;
+	background: #5585D9;
+	box-shadow: inset 0px 0px 6px 2px rgba(255,255,255,0.6);
+	border: 1px solid #fff;
+	font-family: 'Baskerville W01 Italic', serif;
+	font-size: 20px;
+	border-radius: 3px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px
+}
+
+.services-sidebar {
+	width: 230px;
+	float: right;
+	margin-bottom: 30px;
+	color: #9E9FA0;	
+}
+
+.services-sidebar h3 {
+	font-size: 18px;
+	margin: 40px 0px 10px;
+	clear: left;
+}
+
+.services-sidebar h3:first-child {
+	margin-top: 0px;
+}
+
+.services-sidebar .sn {
+	margin-bottom: 30px;
+}
+
+.services-sidebar p {
+	margin-top: 5px;
+}
+
+/* search results */
+
+.search-results.content {
+	float: left;
+	width: 600px;
+	margin: 30px 0px;
+	padding-right: 50px;
+	border-right: 1px solid #EAEAEA;
+}
+
+.search-results.content ol {
+	list-style: none;
+}
+
+.search-results.content ol li {
+	min-height: 100px;
+	position: relative;
+	padding-left: 130px;
+	margin-top: 30px;
+	font-size: 16px;
+}
+
+.search-results.content ol li:first-child {
+	margin-top: 0px;
+}
+
+.search-results.content ol li h3 {
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.search-results.content ol li a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.search-results.content ol li a:hover {
+	text-decoration: underline;
+}
+
+.search-results.content ol li img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.search-results.services-sidebar {
+	margin-top: 30px;
+}
+
+/* about us */
+
+.about-us.content {
+	width: 500px;
+	float: left;
+	margin: 30px 0px;
+}
+
+.about-us.content p.intro {
+	font-size: 22px;
+}
+
+.about-us.content ul li {
+	overflow: hidden;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.about-us.content ul li img {
+	float: left;
+	margin: 0px 15px 15px 0px;
+}
+
+.about-us.content h3 {
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+
+.about-us.content p {
+	margin-bottom: 15px;
+}
+
+.about-us.sidebar {
+	float: right;
+}
+
+/* cart */
+
+.cart.content {
+	margin: 40px 0px;
+}
+
+.cart.content section {
+	position: relative;
+	background: #fbfbfc;
+	border: 1px solid #F4F5ED;
+	border-radius: 10px;
+	min-height: 251px;
+	padding: 15px 15px 15px 303px;
+}
+
+.cart.content section .photo {
+	background: #fff;
+	padding: 0px;
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	z-index: 5;
+}
+
+.cart.content section .photo:before, .cart.content section .photo:after {
+	top: 5%;
+	height: 90%;
+	width: 98%;
+	margin: 0 1%;
+	box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.3);
+}
+
+.cart.content section img {
+	padding: 15px;
+	background: #fff;
+}
+
+.cart.content section header {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #F4F5ED;
+	overflow: hidden;
+}
+
+.cart.content section header h3 {
+	font-size: 32px;
+	width: 300px;
+	float: left;
+}
+
+.cart.content section header div {
+	float:left;
+	width: 150px;
+	line-height: 32px;
+}
+
+.cart.content section li {
+	overflow: hidden;
+	list-style: none;
+	margin-top: 20px;
+	font-size: 22px;
+	color: #5F6064;
+}
+
+.cart.content section li datetime {
+	width: 150px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.cart.content section li .price {
+	width: 150px;
+	float: left;
+	margin-left: 300px;
+}
+
+.cart.content section li a {
+	clear: both;
+	display: block;
+	font-family: 'Baskerville W01 Italic', serif;
+	width: 110px;
+	font-size: 14px;
+	text-decoration: none;
+	text-align: right;
+	color: inherit;
+	padding-right: 10px;
+	background: url(/img/layout/arrow-blk.png) center right no-repeat;
+}
+
+.cart.content section .button {
+	float: right;
+	line-height: 35px;
+	margin: 30px 100px 0px 0px;
+	position: relative;
+	color: #fff;
+}
+
+.cart.content h4 {
+	font-size: 24px;
+	margin: 40px 0px 10px;
+}
+
+.cart.content > p {
+	font-size: 18px;
+	padding-right: 100px;
+}
+
+.cart.content a {
+	color: inherit;
 }
