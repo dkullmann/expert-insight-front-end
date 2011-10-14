@@ -432,8 +432,8 @@ a.sn.twitter {
 	background: #fbfbfc;
 	border: 1px solid #F4F5ED;
 	border-radius: 10px;
-	height: 251px;
-	padding: 15px 15px 15px 303px;
+	min-height: 141px;
+	padding: 15px 15px 125px 303px;
 	margin-bottom: 40px;
 }
 
@@ -515,6 +515,7 @@ a.sn.twitter {
 
 .expert-profile .profile .dates .details {
 	float: right;
+	width: 180px;
 }
 
 .expert-profile .profile .dates .details p {
@@ -1469,7 +1470,8 @@ a.help-me {
 	z-index: 5;
 	box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
 	float: left;
-	margin-bottom: 20px;
+	margin: 0px 0px 20px -10px;
+	border-radius: 3px;
 }
 
 .create-profile .editable .photo img {
