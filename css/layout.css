@@ -1654,3 +1654,88 @@ a.linkedin {
 	font-size: 12px;
 	cursor: pointer;
 }
+
+/* account setup */
+
+.account-setup.content {
+	margin: 30px 0px;
+	width: 600px;
+	float: left;
+	position: relative;
+	padding-right: 60px;
+	border-right: 1px solid #eee;
+}
+
+.account-setup h3 {
+	font-size: 22px;
+	color: #666666;
+}
+
+.account-setup .progress {
+	position: absolute;
+	top: 0px;
+	right: 60px;
+}
+
+.account-setup p.intro {
+	font-size: 20px;
+	margin-top: 80px;
+}
+
+.account-setup form {
+	position: relative;
+}
+
+.account-setup form ul {
+	overflow: hidden;
+}
+
+.account-setup form li {
+	margin: 15px 25px 0px 0px;
+	float: left;
+	color: #3A3E41;
+}
+
+.account-setup form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.account-setup form input {
+	padding: 5px;
+	width: 258px;
+	border: 1px solid #888;
+	background: #fff;
+}
+
+.account-setup form .zip input {
+	width: 50px;
+}
+
+.account-setup form select {
+	display: block;
+	width: 270px; height: 25px;
+	border: 1px solid #888;
+	background: #fff;
+}
+
+.account-setup form .state select {
+	width: 150px;
+}
+
+.account-setup form li.email, .account-setup form li.password {
+	clear: both;
+}
+
+.account-setup form button {
+	position: absolute;
+	left: auto;
+	right: 30px;
+	border: none;
+	height: 35px;
+	cursor: pointer;
+}
+
+.setup.services-sidebar {
+	margin: 30px 0px;
+}
