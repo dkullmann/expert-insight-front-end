@@ -24,7 +24,7 @@ Grays:
 
 *************************************/
 
-body { width: 960px; margin: 0 auto; }
+body { width: 960px; margin: 0 auto; line-height:1.2;}
 
 ul { list-style: none; }
 
@@ -1301,4 +1301,354 @@ ol.controls li.current, ol.controls li:hover {
 
 .cart.content a {
 	color: inherit;
+}
+
+/* become an expert */
+
+.become-an-expert.content {
+	width: 620px;
+	float: left;
+	padding-right: 55px;
+	border-right: 1px solid #eeeeee;
+	margin: 30px 0px;
+}
+
+.become-an-expert.content p.intro {
+	float: left;
+	width: 260px;
+	color: #666666;
+	font-size: 22px;
+}
+
+.become-an-expert.content .shader {
+	float: right;
+	clear: right;
+}
+
+.become-an-expert.content .button {
+	margin: 20px 20px 30px 0px;
+	width: 130px;
+	border: 1px solid rgba(255,255,255,0.8);
+	line-height: 35px;
+}
+
+.become-an-expert.content img {
+	background: #fff;
+	padding: 10px;
+}
+
+.become-an-expert.content h3 {
+	margin: 20px 0px 10px;
+	font-size: 22px;
+	clear: both;
+}
+
+.become-an-expert.content ol {
+	overflow: hidden;
+	list-style: none;
+	margin-left: -20px;
+}
+
+.become-an-expert.content li {
+	width: 160px;
+	float: left;
+	font-size: 18px;
+	margin-left: 40px;
+	padding: 160px 0px 0px 20px;
+	background: url(/img/layout/bae-secure.png) center top no-repeat;
+}
+
+.become-an-expert.content li:first-child {
+	margin: 0px;
+}
+
+.become-an-expert.content li.flexible { background-image: url(/img/layout/bae-flexible.png); }
+
+.become-an-expert.content li.tools { background-image: url(/img/layout/bae-tools.png); }
+
+.become-an-expert.content li strong {
+	font-size: 20px;
+	display: block;
+}
+
+.bae.services-sidebar {
+	margin: 30px 0px;
+}
+
+/* become an expert – progress */
+
+.progress {
+	position: relative;
+	width: 230px;
+	color: #999C9D;
+}
+
+.progress ol {
+	margin-top: 10px;
+	overflow: hidden;
+	font-size: 12px;
+}
+
+.progress ol li {
+	width: 50px;
+	padding-top: 30px;
+	text-align: center;
+	background: url(/img/layout/progress-dark.png) center top no-repeat;
+	float: left;
+	list-style: none;
+	margin-left: 10px;
+}
+
+.progress ol li:first-child {
+	margin-left: 0px;
+}
+
+.progress ol li.current {
+	background-image: url(/img/layout/progress-light.png);
+	color: #111;
+}
+
+/* create profile */
+
+.create-profile.content {
+	margin: 30px 0px;
+	width: 600px;
+	float: left;
+	position: relative;
+}
+
+.create-profile h3 {
+	font-size: 22px;
+	color: #666666;
+}
+
+.create-profile .progress {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+a.edit-me, a.add-me {
+	display: inline-block;
+	color: #879A2A;
+	font-size: 20px;
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+a.help-me {
+	width: 42px; height: 42px;
+	background: url(/img/layout/help.png) center no-repeat;
+	text-indent: -9999px; font-size: 0px; line-height: 0;
+	cursor: pointer;	
+}
+
+.create-profile .editable {
+	margin-top: 80px;
+	color: #393E40;
+}
+
+.create-profile .editable .name {
+	font-family: 'NewsGothicNo.2W01-Roman', sans-serif;
+	font-size: 32px
+}
+
+.create-profile .editable .desc {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.create-profile .editable .body {
+	width: 100%;
+	padding-right: 70px;
+	border-right: 1px solid #eee;
+	margin-top: 20px;
+}
+
+.create-profile .editable .photo {
+	z-index: 5;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+	float: left;
+	margin-bottom: 20px;
+}
+
+.create-profile .editable .photo img {
+	display: block;
+	background: #fff;
+	padding: 10px;
+}
+
+.create-profile .editable .photo .button {
+	font-size: 22px;
+	width: 245px;
+	line-height: 45px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	margin: 20px 30px;
+}
+
+.create-profile .editable blockquote {
+	width: 250px;
+	float: right;
+	position: relative;
+	padding: 40px 0px 0px;
+}
+
+.create-profile .editable blockquote p {
+	font-family: 'Baskerville W01 Italic', serif;
+	font-size: 20px;
+	position: relative;
+}
+
+.create-profile .editable blockquote p:before {
+	content: "“";
+	position: absolute;
+	left: -10px;
+	top: 0px;
+}
+
+.create-profile .editable blockquote p:after {
+	content: "”";
+}
+
+.create-profile .editable article {
+	clear: both;
+	margin: 20px 0px;
+	overflow: hidden;
+	position: relative;
+}
+
+.create-profile .editable article h5 {
+	font-family: 'NewsGothicNo.2W01-Roman', sans-serif;
+	font-size: 24px;
+	display: inline-block;
+	position: relative;
+	padding-right: 45px;
+	line-height: 38px;
+	min-height: 42px;
+}
+
+.create-profile .editable article h5 .help-me {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.create-profile .editable article .edit-me, .create-profile .editable blockquote .edit-me {
+	position: absolute;
+	top: 0px; right: 0px;
+	margin: 5px 0px 0px;
+}
+
+.create-profile .editable .work-experience {
+	border-top: 1px solid #C07C29;
+	margin: 30px 0px 0px;
+	padding: 20px 0px 0px;
+}
+
+a.linkedin {
+	position: absolute;
+	top: 18px; right: 0px;
+	padding: 3px 3px 3px 50px;
+	font-size: 20px;
+	line-height: 20px;
+	text-transform: lowercase;
+	border: 1px solid #eee;
+	background: url(/img/logos/linkedin.png) center left no-repeat;
+	width: 90px;
+	color: #85992A;
+	text-decoration: none;
+	border-radius: 3px;;
+}
+
+.create-profile .editable article article {
+	margin: 20px 0px 0px;
+	overflow: hidden;
+}
+
+.create-profile .editable article article .add-me {
+	float: right;
+}
+
+.create-profile .editable .work {
+	padding-bottom: 20px;
+	margin-bottom: 30px; 
+	border-bottom: 1px solid #eee;
+}
+
+.create-profile .editable h6 {
+	font-family: 'NewsGothicNo.2W01-Roman', sans-serif;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.create-profile .editable dl {
+	overflow: auto;
+}
+
+.create-profile .editable dt {
+	width: 140px;
+	float: left;
+	font-family: 'NewsGothicNo.2W01-Roman', sans-serif;
+}
+
+.create-profile .editable dd {
+	width: 450px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.create-profile.profile-sidebar form {
+	overflow: hidden;
+	margin-top: 55px;
+}
+
+.create-profile.profile-sidebar form.videos {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid #eee;
+}
+
+.create-profile.profile-sidebar legend {
+	font-family: 'NewsGothicNo.2W01-Roman', sans-serif;
+	font-size: 22px;
+}
+
+.create-profile.profile-sidebar label {
+	display: block;
+	line-height: 23px;
+	font-size: 18px;
+	color: #4B5052;
+	padding-left: 30px;
+	margin: 10px 0px 0px;
+	background: url(/img/logos/twitter.png) center left no-repeat;
+	clear: both;
+}
+
+.create-profile.profile-sidebar label.facebook {
+	background-image: url(/img/logos/facebook.png);
+}
+
+.create-profile.profile-sidebar label.blog {
+	background-image: url(/img/logos/rss.png);
+}
+
+.create-profile.profile-sidebar input {
+	box-sizing:border-box;
+	width: 100%;
+	padding: 5px;
+	background: #fff;
+	border: #C3C4C5 1px solid;
+	margin-top: 5px;
+}
+
+.create-profile.profile-sidebar .button {
+	position: relative;
+	float: right;
+	margin: 5px 0px 10px;
+	border: none;
+	width: 80px;
+	height: 25px;
+	font-size: 12px;
+	cursor: pointer;
 }
