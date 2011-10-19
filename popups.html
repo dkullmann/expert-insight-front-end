@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>popup layout</title>
+	
+	<link rel='stylesheet' href='/css/layout.css' />
+	
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'></script>
+	<script type="text/javascript" src="https://fast.fonts.com/jsapi/cc0f6ec7-d6a8-45ed-bc34-109224cdc395.js"></script>	
+	<script>
+	
+	function clearPopups() {
+		$('.popup-content input').val('');
+	}
+	
+	$(document).ready(function() {
+	
+		// view appointments
+		$('button.view-appointments').click(function() {
+			$('#view-appointments').dialog({
+				modal: true,
+				width: 576,
+				minHeight: 313,
+				dialogClass: 'bottom',
+				close: clearPopups()
+			});			
+		});	
+		
+		// edit contact 
+		$('button.edit-contact').click(function() {
+			$('#edit-contact').dialog({
+				modal: true,
+				width: 576,
+				height: 313,
+				buttons: {
+					'submit':function() {
+						// form submission stuff here!
+						$(this).dialog("close");
+					}
+				},
+				close: clearPopups()
+			});			
+		});
+		
+		// change password
+		$('button.edit-password').click(function() {
+			$('#edit-password').dialog({
+				modal: true,
+				width: 576,
+				height: 313,
+				buttons: {
+					'submit':function() {
+						// form submission stuff here!
+						$(this).dialog("close");
+					}
+				},
+				close: clearPopups()
+			});			
+		});
+		
+		// booked messaging
+		$('button.booked-messaging').click(function() {
+			$('#booked-messaging').dialog({
+				modal: true,
+				width: 576,
+				height: 313,
+				dialogClass: 'no-close'
+			});			
+		});
+		
+		// booked messaging
+		$('button.availability').click(function() {
+			$('#availability').dialog({
+				modal: true,
+				width: 576,
+				height: 313,
+				dialogClass: 'no-close'
+			});			
+		});
+		
+		// profile complete
+		$('button.profile-complete').click(function() {
+			$('#profile-complete').dialog({
+				modal: true,
+				width: 576,
+				height: 313,
+				dialogClass: 'bottom'
+			});			
+		});
+		
+	});
+	
+	</script>
+
+</head>
+
+<body>
+
+<button class='view-appointments'>View appointments</button>
+<button class='edit-contact'>Edit contact info</button>
+<button class='edit-password'>Change password</button>
+<button class='booked-messaging'>Booked</button>
+<button class='availability'>Scheduled Availability</button>
+<button class='profile-complete'>Profile Complete</button>
+
+	<form id='view-appointments' class='popup-content'>
+	
+		<legend>View Appointments</legend>
+		
+		<a class='button current'>this week</a>
+		<a class='button'>this month</a>
+		
+		<fieldset>		
+			<label for='from'>From:</label>
+			<input name='from' value='9/22/2011' />		
+		</fieldset>
+		
+		<fieldset>		
+			<label for='to'>To:</label>
+			<input name='to' value='10/22/2011' />		
+		</fieldset>
+		
+		<h3>Results:</h3>
+		<ol>
+			<li>
+				<datetime>9/22/20011</datetime>
+				<div class='name'>Steven Dubner</div>
+			</li>
+		</ol>
+	
+	</form>
+
+	<form id='edit-contact' class='popup-content'>
+	
+		<legend>Change Contact Information</legend>
+		
+		<label for='change-email'>Email</label>
+		<input name='change-email' />
+		
+		<label for='change-fn'>First Name</label>
+		<input name='change-fn' />
+		
+		<label for='change-ln'>Last Name</label>
+		<input name='change-ln' />
+		
+		<label for='change-tz'>Time Zone</label>
+		<input name='change-tz' />
+	
+	</form>
+	
+	<form id='edit-password' class='popup-content'>
+	
+		<legend>Change Password</legend>
+		
+		<label for='old-pass'>Old Password</label>
+		<input name='old-pass' type='password' />
+		
+		<label for='new-pass'>New Password</label>
+		<input name='new-pass' type='password' />
+		
+		<label for='confirm-pass'>Confirm Password</label>
+		<input name='confirm-pass' type='password' />
+	
+	</form>
+	
+	<div id='booked-messaging' class='popup-content'>
+	
+		<h2>Appointment Booked!</h2>
+		
+		<h3>Instructions</h3>
+		
+		<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+		
+		<a class='more' href=''>more</a>
+	
+	</div>
+	
+	<div id='availability' class='popup-content'>
+	
+		<h2>Scheduled Availability</h2>
+		
+		<ol class='steps'>		
+			<li class='step1 current'>Step 1</li>			
+			<li class='step2'>Step 2</li>			
+			<li class='step3'>Step 3</li>		
+		</ol>
+		
+		<h3>Instructions</h3>
+		
+		<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+		
+		<a class='more' href=''>more</a>
+	
+	</div>
+	
+	<div id='profile-complete' class='popup-content'>
+	
+		<h2>Profile Complete!</h2>
+		
+		<h3>Instructions</h3>
+		
+		<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+		
+		<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat!</p>
+	
+	</div>
+
+</body>
+
+</html>

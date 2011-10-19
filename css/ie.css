@@ -75,3 +75,10 @@
 	width: 196px;
 	background: url(/img/ie/shadow-hiw.png) top left no-repeat;
 }
+
+/* create-profile.html */
+
+.create-profile .editable article h5 {
+	display: inline;
+	zoom:1;
+}

@@ -209,6 +209,243 @@ Homepage
 .ei-press .press-logo { vertical-align: middle; }
 .ei-press .text { color: #5f6365; font-size: 22px; font-weight: normal; }
 
+/* footer */
+
+footer {
+	width: 944px;
+	margin: 20px auto;
+	clear: both;
+	overflow: hidden;
+}
+
+footer h4 {
+	width: 156px; height: 23px;
+	text-indent: -9999px; font-size: 0px; line-height: 0;
+	background: url(/img/logos/ei-footer.png) center no-repeat;
+	float: left;
+}
+
+footer p {
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+footer p.copyright {
+	padding-top: 10px;
+	background: url(/img/layout/footer.png) center top no-repeat;
+	clear: both;
+}
+
+footer a {
+	color: #5F6365;
+	text-decoration: none;
+}
+
+footer p a {
+	color: #85992A;
+}
+
+footer nav {
+	float: right;
+	font-size: 12px;
+	margin-top: 10px;
+	position: relative;
+}
+
+footer nav a {
+	width: 50px;	
+	display: inline-block;
+	margin-left: 100px;
+}
+
+footer nav a.contacts {
+	position: absolute;
+	right: 0px;
+	bottom: -25px;
+}
+
+/* footer */
+
+.popup-content {
+	display: none;
+	font-family: 'NewsGothicNo.2W01-Light 710401', geneva, sans-serif;
+	padding-right: 150px;
+	overflow: hidden;
+}
+
+.bottom .popup-content {
+	padding-right: 0px;
+}
+
+.ui-dialog {
+	padding: 40px;
+	background: #fff url(/img/layout/popup-gradient.png) bottom center repeat-x;
+	border: 1px solid #879A2A;
+	box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
+	border-radius: 3px 20px 3px 20px;
+}
+
+.ui-dialog-title {
+	display: none;
+}
+
+.ui-dialog-titlebar-close {
+	width: 30px; height: 27px;
+	position: absolute;
+	top: 15px; right: 30px;
+	text-indent: -9999px; font-size: 0px; line-height: 0;
+	background: url(/img/layout/popup-close.png) center no-repeat;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.no-close .ui-dialog-titlebar-close {
+	display: none;
+}
+
+.bottom .ui-dialog-titlebar-close {
+	top: auto;
+	bottom: 15px;
+}
+
+.ui-widget-overlay {
+	background: rgba(255,255,255,0.5);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+.popup-content h2, .popup-content legend {
+	display: inline-block;
+	background: #879A2A;
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 22px;
+}
+
+.popup-content label {
+	display: block;
+	color: #383D3F;
+	font-size: 18px;
+	margin: 15px 0px 0px 10px;
+}
+
+.popup-content input {
+	display: block;
+	border: 1px solid #999;
+	padding: 5px;
+	margin-left: 5px;
+	height: 20px;
+	width: 300px;
+	outline: none;
+}
+
+.popup-content a.more {
+	margin: 10px 0px 0px;
+	padding-right: 10px;
+	color: #444;
+	background: url(/img/layout/arrow-blk.png) center right no-repeat;
+	border: none;
+	font-family: 'Baskerville W01 Italic', serif;
+	outline: none;
+	float: right;
+	text-decoration: none;
+}
+
+.ui-dialog .ui-button {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	height: 40px;
+	width: 130px;
+	text-align: center;
+	background: #5585D9;
+	color: #fff;
+	box-shadow: inset 0px 0px 6px 2px rgba(255,255,255,0.6);
+	font-family: 'Baskerville W01 Italic';
+	font-size: 22px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+}
+
+.popup-content .steps {
+	list-style: none;
+	overflow: hidden;
+	position: absolute;
+	left: 300px;
+	top: 35px;
+}
+
+.popup-content .steps li {
+	width: 30px;
+	padding-top: 30px;
+	background: url(/img/layout/progress-dark.png) center top no-repeat;
+	text-align: center;
+	font-size: 12px;
+	color: #858788;
+	float: left;
+	margin-right: 10px;
+}
+
+.popup-content .steps li.current {
+	background-image: url(/img/layout/progress-light.png);
+}
+
+#view-appointments legend {
+	margin: 0px 20px 0px 0px;
+	float: left;
+}
+
+#view-appointments .button {
+	display: inline-block;
+	margin-left: 10px;
+	position: relative;
+	bottom: auto; left: auto;
+	margin-top: 11px;
+	color: #fff;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+#view-appointments .button.current {
+	opacity: 1;
+	cursor: default;
+}
+
+#view-appointments fieldset {
+	border: 0px;
+	padding: 0px;
+	float: left;
+	margin: 20px 60px 20px 0px;
+}
+
+#view-appointments h3 {
+	clear: both;
+	font-size: 18px;
+	margin: 0px 0px 0px 10px;
+}
+
+#view-appointments input {
+	width: 125px;
+}
+
+#view-appointments ol {
+	padding: 0px 0px 0px 10px;
+}
+
+#view-appointments li {
+	font-size: 22px;
+	color: #737778;
+	margin: 5px 0px 0px;
+}
+
+#view-appointments li datetime {
+	width: 200px;
+}
+
+#view-appointments li datetime, #view-appointments li div {
+	display: inline-block;
+}
+
 /* featured experts */
 
 .content.featured-experts {
@@ -1114,6 +1351,7 @@ ol.controls li.current, ol.controls li:hover {
 	margin: 30px 0px;
 	padding-right: 50px;
 	border-right: 1px solid #EAEAEA;
+	clear: left;
 }
 
 .search-results.content ol {
@@ -1636,8 +1874,7 @@ a.linkedin {
 }
 
 .create-profile.profile-sidebar input {
-	box-sizing:border-box;
-	width: 100%;
+	width: 238px;
 	padding: 5px;
 	background: #fff;
 	border: #C3C4C5 1px solid;
