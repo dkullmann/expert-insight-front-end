@@ -20,7 +20,7 @@
 
 /* shadow fixes */
 
-.expert-profile .profile .photo {
+.expert-profile .profile .photo, .cart.content section .photo {
 	padding: 20px 15px 26px;
 	left: -30px;
 	top: -35px;
@@ -57,9 +57,9 @@
 	border: none;
 }
 
-.profile-sidebar .shader {
+.profile-sidebar .shader, .services-sidebar .shader {
 	padding: 18px;
-	margin: -10px -18px 0px 0px;
+	margin: -10px -18px 0px;
 	background: url(/img/ie/shadow-hiw-wide.png) center no-repeat;
 }
 
@@ -76,9 +76,31 @@
 	background: url(/img/ie/shadow-hiw.png) top left no-repeat;
 }
 
+.scroller .shader {	
+	background: url(/img/ie/shadow-all-experts.png) center top no-repeat;
+	padding: 15px;
+	margin: -15px -15px 0px;
+}
+
+.become-an-expert.content div.shader {	
+	background: url(/img/ie/shadow-bae.png) center top no-repeat;
+	padding: 10px 17px 12px;
+	margin: -10px -17px -12px;
+}
+
 /* create-profile.html */
 
+.create-profile .editable .photo {	
+	background: url(/img/ie/shadow-create-profile.png) center top no-repeat;
+	padding: 15px 5px 24px;
+	margin: -15px -5px 0px;
+}
+
+.create-profile .editable .photo .button {
+	margin-bottom: 44px;
+}
+
 .create-profile .editable article h5 {
-	display: inline;
 	zoom:1;
+	height: 42px;
 }
