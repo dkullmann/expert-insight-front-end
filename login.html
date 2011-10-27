@@ -3,7 +3,7 @@
 	<head>
 		
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Expert Insight | Appointment booked</title><link href="https://expertinsight.dev/" rel="canonical" />		
+	<title>Expert Insight | Log in</title><link href="https://expertinsight.dev/" rel="canonical" />		
 	<link rel="stylesheet" type="text/css" href="css/html5-reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="css/menu.css" />
@@ -179,49 +179,65 @@
 							
 		</header>		
 		
-		<h2 class="main-header">Appointment Booked</h2>
+		<h2 class="main-header">Log in</h2>
 			
-		<div class="cart confirmation content">
+		<div class="login content">
 		
-			<section class='profile'>
+			<h3>Already a member?</h3>
 			
-				<p>Congratulations, you have booked an appointment with Phil Gordon.</p>
+			<section class='facebook'>
+			
+				<h4>Log in using Facebook</h4>
 				
-				<div class='details'>
+				<p>It's super fast, simple, secure, and only takes one click!</p>
 				
-					<p>September 12<sup>th</sup>, 2011</p>
-					<p>Time: 9:30-10:00 EST</p>
-				
-				</div>
-				
-				<a class='facebook' href=''>Post to your wall</a>
-				<a class='twitter' href=''>Tweet this</a>
-				
-				<div class='photo shader'>				
-					<img src='/img/test-assets/profile.jpg' width='266' height='281' alt='Jeff Miron' />	
-				</div>
-				
+				<fb:login-button size="large" onlogin="afterFacebookConnect();" perms="email">Log in using Facebook</fb:login-button>
+			
 			</section>
 			
-			<ul>
+			<section class='email'>
 			
-				<li>
-			
-					<h4>Prepare for your EI call</h4>
-					<p>What can you expect on the day of your call? <a href=''>This page</a> walks you through the process.</p>
-					
-				</li>
+				<h4>Or, login using your email</h4>
+						
+				<form id="UserLoginForm" method="post" action="/users/login" accept-charset="utf-8">
 				
-				<li>
-			
-					<h4>Test your setup</h4>
-					<p>At Expert Insight we use state-of-the-art technology in our video chat application. Test your system prior to your appointment for best results.</p>
+					<div style="display:none;"><input type="hidden" name="_method" value="POST"></div>
 					
-					<a class='button shader'>launch test</a>
+					<fieldset class="first last">
+						
+						<div class="input text required">
+							<label for="UserEmail">Email</label>
+							<input name="data[User][email]" type="text" maxlength="255" id="UserEmail">
+						</div>
+						
+						<div class="input password required">
+							<label for="UserPasswd">Password</label>
+							<input type="password" name="data[User][passwd]" id="UserPasswd">
+						</div>
+						
+						Remember Me
+						<input type="hidden" name="data[User][remember_me]" id="UserRememberMe_" value="0">
+						<input type="checkbox" name="data[User][remember_me]" value="1" id="UserRememberMe">
+						
+						<div class="submit">
+							<input type="submit" value="Login">
+						</div>
+						
+					</fieldset>
 					
-				</li>
+				</form>
 				
-			</ul>
+				<p>Forgot your password? <a href="/users/reset_password">Reset your password</a></p>
+			
+			</section>
+		
+		</div>
+		
+		<div class='login-sidebar'>
+			
+			<h3>Need an account?</h3>
+			
+			<a href="/register" class='button shader'>Sign Up</a>
 			
 		</div>
 		

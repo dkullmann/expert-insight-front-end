@@ -2194,3 +2194,143 @@ a.linkedin {
 	width: 120px;
 	height: 35px;
 }
+
+/* login page */
+
+.login.content {
+	margin: 20px 0px;
+	padding: 10px 50px 10px 0px;
+	border-right: 1px solid #EBEBEB;
+	width: 660px;
+	float: left;
+}
+
+.login.content section {
+	background: #FBFBFC;
+	border: 1px solid #F4F5ED;
+	border-radius: 10px;
+	float: left;
+	width: 280px;
+	padding: 20px;
+	min-height: 180px;
+}
+
+.login.content section.facebook {
+	margin: 0px 25px 0px -20px;
+}
+
+.login.content h3, .login-sidebar h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.login.content .input {
+	margin-bottom: 10px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.login.content .input label {
+	display: inline-block;
+	width: 60px;
+	margin-right: 10px;
+}
+
+.login.content .input input {
+	padding: 5px;
+	border: 1px solid #F4F5ED;
+	border-radius: 3px;
+	font-family: 'NewsGothicNo.2W01-Light 710401', sans-serif;
+	font-size: 18px;
+	width: 190px;
+}
+
+.login.content h4 {
+	font-size: 22px;
+	margin: 0px 0px 10px;
+}
+
+.login.content .submit input {
+	color: #fff;
+	display: block;
+	width: 80px;
+	line-height: 22px;
+	text-align: center;
+	background: #5585D9;
+	box-shadow: inset 0px 0px 6px 2px rgba(255,255,255,0.6);
+	font-family: 'Baskerville W01 Italic', serif;
+	font-size: 16px;
+	border-radius: 3px;
+	border: none;
+	float: right;
+	margin-top: -20px;
+	cursor: pointer;
+}
+
+.login.content .facebook p {
+	margin-bottom: 15px;
+}
+
+.login.content .email p {
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.login.content .email a {
+	color: #7D9116;
+}
+
+.login-sidebar {
+	margin: 30px 0px;
+	width: 200px;
+	float: right;
+}
+
+.login-sidebar .button {
+	padding: 10px 0px;
+	width: 200px;
+	box-shadow: inset 0px 0px 15px #fff;
+}
+
+/* forgotten password */
+
+.login.password form {
+	background: #FBFBFC;
+	border: 1px solid #F4F5ED;
+	border-radius: 10px;
+	float: left;
+	padding: 20px;
+	margin-left: -20px;
+	width: 640px;
+	overflow: hidden;
+	position: relative;
+}
+
+.login.password fieldset {
+	padding-right: 100px;
+}
+
+.login.password .input {
+	margin: 0px;
+}
+
+.login.password .input label {
+	width: 100px;
+	margin-top: 15px;
+}
+
+.login.password .input input {
+	width: 350px;
+}
+
+.login.password .submit {
+	margin: 20px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+.login.password .submit input {
+	width: 110px;
+	height: 32px;
+}
