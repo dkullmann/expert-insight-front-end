@@ -1453,6 +1453,7 @@ ol.controls li.current, ol.controls li:hover {
 	border-radius: 10px;
 	min-height: 251px;
 	padding: 15px 15px 15px 303px;
+	margin-bottom: 40px;
 }
 
 .cart.content section .photo {
@@ -1511,7 +1512,7 @@ ol.controls li.current, ol.controls li:hover {
 	margin-bottom: 10px;
 }
 
-.cart.content section li .price {
+.cart.content section .price {
 	width: 150px;
 	float: left;
 	margin-left: 300px;
@@ -1531,11 +1532,24 @@ ol.controls li.current, ol.controls li:hover {
 }
 
 .cart.content section .button {
-	float: right;
+	float:left;
 	line-height: 35px;
-	margin: 30px 100px 0px 0px;
+	margin: 10px 0px 0px 400px;
 	position: relative;
 	color: #fff;
+	width: 150px;
+}
+
+.cart.content section.total {
+	min-height: 0px;
+	margin-bottom: 0px;
+	font-size: 22px;
+	overflow: hidden;
+}
+
+.cart.content section.total h3 {
+	width: 150px;
+	float: left;
 }
 
 .cart.content h4 {
