@@ -36,13 +36,13 @@ button {
 
 body > header {
 	position: relative;
-	height: 120px;
+	height: 100px;
 	z-index: 1000;
 }
 
 body > header h1 {
 	 position: absolute;
-	 top: 50px;
+	 bottom: 0px;
 	 left: -5px;
 	 width: 261px; 
 	 height: 75px;
@@ -121,7 +121,7 @@ Homepage
 	background: url(../img/layout/homepage-background.png) no-repeat center top; 
 	min-height: 980px;
 	width: 980px;
-	margin: 40px 0px 40px -10px;
+	margin: 30px 0px 30px -10px;
 }
 
 /** All slides **/
@@ -135,7 +135,8 @@ Homepage
 	position: relative; 
 	width: 980px; 
 	height: 408px;
-	background: transparent; 
+	background: transparent;
+	overflow: hidden;
 }
 
 /** Slide 1 **/
