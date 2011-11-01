@@ -8,12 +8,15 @@
 		<link rel="stylesheet" type="text/css" href="css/layout.css" />
 		<link rel="stylesheet" type="text/css" href="css/menu.css" />
 		
+		<script type="text/javascript" src="js/jquery.tools.min.js"></script>		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>		
+		<script type="text/javascript" src="https://fast.fonts.com/jsapi/cc0f6ec7-d6a8-45ed-bc34-109224cdc395.js"></script>	
+		
 		<!--[if lt IE 9]>
 		<link rel="stylesheet" type="text/css" href="css/ie.css" />
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="/js/ie.js"></script>
 		<![endif]-->
 		
-		<script type="text/javascript" src="js/jquery.tools.min.js"></script>		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>		<script type="text/javascript" src="https://fast.fonts.com/jsapi/cc0f6ec7-d6a8-45ed-bc34-109224cdc395.js"></script>	
 	</head>
 	
 	<!-- body class is set to the controller and action -->
@@ -185,7 +188,7 @@
 			</nav>
 			
 			<!-- Search input is an form -->
-			<form class="search-form" id="UserDisplayForm" method="post" action="/users" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>			<div class="input text"><label for="UserName"></label><input name="data[User][name]" type="text" class="search" id="UserName" /></div>			<div class="submit"><input class="search-button" type="submit" value="Search Experts" /></div>			</form>						
+			<form class="search-form" id="UserDisplayForm" method="post" action="/users" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>			<div class="input text"><label for="UserName"></label><input name="data[User][name]" type="text" class="search" id="UserName" placeholder="search" /></div>			<div class="submit"><input class="search-button" type="submit" value="Search Experts" /></div>			</form>						
 		</header>
 		
 		
