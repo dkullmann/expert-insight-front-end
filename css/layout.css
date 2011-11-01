@@ -52,7 +52,7 @@ body > header h1 {
 
 /* Not a big fan of absolute positioning but better than floating for this -DK */
 .login-links { position: absolute; top: 15px; right: 40px;  font-size: 11px; }
-.login-links li { float: left; margin-right: 95px; }
+.login-links li { float: left; padding-right: 95px; }
 .login-links li a, .nav-links li a { color: #393e3f; text-decoration: none; } 
 
 .search-form { position: absolute; top: 150px; right: 0px; }
