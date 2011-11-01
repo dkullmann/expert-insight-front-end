@@ -55,7 +55,7 @@ body > header h1 {
 .login-links li { float: left; padding-right: 95px; }
 .login-links li a, .nav-links li a { color: #393e3f; text-decoration: none; } 
 
-.search-form { position: absolute; top: 150px; right: 0px; }
+.search-form { position: absolute; top: 130px; right: 0px; }
 .search-form .search { width: 115px; height: 22px; border: 1px solid #e7e7e7; outline: none; }
 .search-form .input, .search-form .submit { float: right; }
 
