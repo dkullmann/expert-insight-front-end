@@ -2349,3 +2349,345 @@ a.linkedin {
 	width: 110px;
 	height: 32px;
 }
+
+/* create schedule */
+
+.content.create-schedule {
+	margin-top: 40px;
+	border: 1px solid #879A2A;
+	box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
+	border-radius: 3px 50px 3px 50px;
+	background: #fff url(/img/layout/popup-gradient.png) bottom center repeat-x;
+	padding: 30px;
+}
+
+.create-schedule h2 {
+	color: #393E40;
+	font-size: 32px;
+	margin: 0px 0px 20px;
+}
+
+.create-schedule .tabs {
+	overflow: hidden;
+}
+
+.create-schedule .tabs li {
+	float: left;
+	position: relative;
+	z-index: 0;
+}
+
+.create-schedule .tabs li.current {
+	z-index: 1;
+}
+
+.create-schedule .tabs a {
+	display: block;
+	width: 180px;
+	color: #333;
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+	line-height: 35px;
+	border: #ddd 1px solid;
+	border-radius: 10px 10px 0px 0px;
+	margin: 0px -1px -1px 0px;
+	box-shadow: inset 0px -2px 5px rgba(0,0,0,0.05);
+}
+
+.create-schedule .tabs .current a {
+	color: #fff;
+	background: #5585D9;
+	border-color: #5585D9;
+	box-shadow: inset 0px 0px 6px 2px rgba(255,255,255,0.6);
+}
+
+.create-schedule section {
+	position: relative;
+	padding: 30px 20px 70px;
+	min-height: 350px;
+	border: #ddd 1px solid;
+	border-radius: 0px 0px 0px 30px;
+	font-size: 20px;
+	color: #666;
+}
+
+.create-schedule section button, .book-appointment .summary button {
+	color: #fff;
+	width: 101px;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: lowercase;
+	background: #5585D9;
+	border: none;
+	box-shadow: inset 0px 0px 6px 2px rgba(255,255,255,0.6);
+	font-family: 'Baskerville W01 Italic', serif;
+	font-size: 20px;
+	border-radius: 3px;
+}
+
+.create-schedule section button.save {
+	position: absolute;
+	display: block;
+	bottom: 0px;
+	right: 0px;
+	margin: 20px;
+}
+
+.create-schedule section input, .create-schedule section select {
+	border: 1px solid #ccc;
+	background: #fff;
+	width: 160px;
+	padding: 3px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.create-schedule section label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.create-schedule #settings fieldset {
+	width: 45%;
+	float: left;
+}
+
+.create-schedule #template li {
+	float: left;
+	width: 95px;
+	margin-left: 15px;
+	padding-left: 15px;
+	border-left: 1px solid #ddbb92;
+	list-style: none;
+}
+
+.create-schedule #template li:first-child {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+.create-schedule #template select {
+	display: block;
+	width: 95px;
+	margin-bottom: 5px;
+}
+
+.create-schedule #template .add-block {
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #91A13E;
+}
+
+.create-schedule #suspensions {
+	font-size: 16px;
+}
+
+.create-schedule #suspensions h3, .create-schedule #suspensions h4 {
+	font-family: 'NewsGothicNo.2W01-Roman', sans-serif;
+	font-size: 20px;
+}
+
+.create-schedule #suspensions h4 {
+ 	font-size: 18px;
+ 	margin-top: 40px;
+ }
+ 
+.create-schedule #suspensions ol {
+	list-style: none;
+}
+
+.create-schedule #suspensions ol span {
+	display: inline-block;
+	width: 230px;
+}
+
+.create-schedule #suspensions ol a {
+	color: #91A13E;
+}
+
+/* book an appointment */
+
+.content.book-appointment {
+	margin-top: 40px;
+	border: 1px solid #879A2A;
+	box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
+	border-radius: 3px 50px 3px 50px;
+	background: #fff url(/img/layout/popup-gradient.png) bottom center repeat-x;
+	padding: 30px;
+}
+
+.book-appointment h2 {
+	color: #fff;
+	font-size: 28px;
+	margin: 0px 0px 20px;
+	padding: 10px;
+	background: #879A2A;
+	display: inline-block;
+}
+
+.book-appointment form {
+	position: relative;
+	padding: 30px 20px 70px;
+	min-height: 350px;
+	border: #ddd 1px solid;
+	border-radius: 0px 0px 0px 30px;
+	font-size: 16px;
+	color: #666;
+}
+
+.book-appointment ol {
+	list-style: none;
+	overflow: hidden;
+}
+
+.book-appointment ol li {
+	width: 30%;
+	float: left;
+}
+
+.book-appointment ol li.step2 {
+	margin: 0px 5%;
+}
+
+.book-appointment h3 {
+	font-family: 'NewsGothicNo.2W01-Roman', sans-serif;
+	font-size: 20px;
+}
+
+.book-appointment select {
+	border: 1px solid #ccc;
+	background: #fff;
+	width: 160px;
+	padding: 3px;
+	height: 20px;
+	display: inline-block;
+	margin: 10px 0px 0px;
+	outline: none;
+}
+
+.book-appointment .ui-datepicker {
+	display: none;
+	position: relative;
+	width: 180px;
+	margin: 10px 0px;
+	padding: 5px;
+	border: 2px #999 solid;
+	border-radius: 3px;
+	background: #f5f5f5;
+}
+
+.book-appointment .ui-datepicker-title {
+	font-weight: bold;
+	text-align: center;
+	padding: 1px 30px 5px;
+	font-size: 13px;
+	font-family: 'News Gothic MT W01 Bold', sans-serif;
+}
+
+.book-appointment .ui-datepicker table {
+	width: 100%;
+	font-size: 13px;
+	font-family: 'NewsGothicNo.2W01-Roman', sans-serif;
+}
+
+.book-appointment .ui-datepicker th {
+	text-align: center;
+	padding: 5px 0px;
+}
+
+.book-appointment .ui-datepicker td {
+	padding: 0px;
+	border: 1px solid #999;
+	background: #fff;
+	text-align: center;
+}
+
+.book-appointment .ui-datepicker table a {
+	padding: 5px;
+	display: block;
+	text-decoration: none;
+	color: #002e9a;
+}
+
+.book-appointment .ui-datepicker .ui-datepicker-unselectable {
+	padding: 5px;
+}
+
+.book-appointment .ui-datepicker .ui-datepicker-other-month {
+	background: #ddd;
+}
+
+.book-appointment .ui-datepicker .ui-state-active {
+	background: #002e9a;
+	color: #fff;
+}
+
+.book-appointment .ui-datepicker-prev, .book-appointment .ui-datepicker-next {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: 5px;
+	width: 20px; line-height: 15px;
+	border: 1px solid #999;
+	border-radius: 3px;
+	text-align: center;
+	box-shadow: inset 0px -2px 5px rgba(255,255,255,0.5);
+	cursor: pointer;
+}
+
+.book-appointment .ui-datepicker-next {
+	left: auto;
+	right: 0px;
+}
+
+.book-appointment .summary {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin: 20px;
+	padding: 15px;
+	width: 230px;
+	background: #fff;
+	border: 1px #ebebeb solid;
+	overflow: hidden;
+}
+
+.book-appointment .summary h4 {
+	color: #fff;
+	font-size: 18px;
+	padding: 10px;
+	background: #879A2A;
+}
+
+.book-appointment .summary li {
+	margin-top: 10px;
+	font-size: 16px;
+	padding: 0px 10px;
+}
+
+.book-appointment .summary strong {
+	font-family: 'NewsGothicNo.2W01-Roman', sans-serif;
+	display: inline-block;
+	width: 50px;
+}
+
+.book-appointment .summary .not-set {
+	color: #bbb;
+}
+
+.book-appointment .summary button {
+	margin-top: 10px;
+	height: 32px;
+	float: right;
+}
+
+.book-appointment .summary button[disabled] {
+	background: #999;
+	color: #bbb;
+	cursor: default;
+}

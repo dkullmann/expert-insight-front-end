@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+	var scroller_max = 4;
 	
 	// expert grid popups
 	$(".expert-grid li").hover(function() {
@@ -13,9 +15,14 @@ $(document).ready(function() {
 		});
 	});
 	
-	// scroller
+	// all experts scroller
 	$(".scroller").each(function() {
-		$(this).append($("<a class='prev'>Previous</a>")).append($("<a class='next'>Next</a>"));
+		var count = $(".scroller li").length;
+		var current = 1;
+		// add the buttons
+		$("<a class='prev'>Previous</a>")).appendTo($(this)).click(function(){
+			$(".scroller ui").css("marginLeft", -= 177);
+		})
 	});
 	
 	// experts list
@@ -40,6 +47,5 @@ $(document).ready(function() {
 		});
 		
 	});
-	
 	
 });
