@@ -2352,7 +2352,7 @@ a.linkedin {
 
 /* create schedule */
 
-.content.create-schedule {
+.create-popup {
 	margin-top: 40px;
 	border: 1px solid #879A2A;
 	box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
@@ -2510,6 +2510,12 @@ a.linkedin {
 	color: #91A13E;
 }
 
+.create-schedule button[disabled] {
+	background: #999;
+	color: #bbb;
+	cursor: default;
+}
+
 /* book an appointment */
 
 .content.book-appointment {
@@ -2570,81 +2576,6 @@ a.linkedin {
 	outline: none;
 }
 
-.book-appointment .ui-datepicker {
-	display: none;
-	position: relative;
-	width: 180px;
-	margin: 10px 0px;
-	padding: 5px;
-	border: 2px #999 solid;
-	border-radius: 3px;
-	background: #f5f5f5;
-}
-
-.book-appointment .ui-datepicker-title {
-	font-weight: bold;
-	text-align: center;
-	padding: 1px 30px 5px;
-	font-size: 13px;
-	font-family: 'News Gothic MT W01 Bold', sans-serif;
-}
-
-.book-appointment .ui-datepicker table {
-	width: 100%;
-	font-size: 13px;
-	font-family: 'NewsGothicNo.2W01-Roman', sans-serif;
-}
-
-.book-appointment .ui-datepicker th {
-	text-align: center;
-	padding: 5px 0px;
-}
-
-.book-appointment .ui-datepicker td {
-	padding: 0px;
-	border: 1px solid #999;
-	background: #fff;
-	text-align: center;
-}
-
-.book-appointment .ui-datepicker table a {
-	padding: 5px;
-	display: block;
-	text-decoration: none;
-	color: #002e9a;
-}
-
-.book-appointment .ui-datepicker .ui-datepicker-unselectable {
-	padding: 5px;
-}
-
-.book-appointment .ui-datepicker .ui-datepicker-other-month {
-	background: #ddd;
-}
-
-.book-appointment .ui-datepicker .ui-state-active {
-	background: #002e9a;
-	color: #fff;
-}
-
-.book-appointment .ui-datepicker-prev, .book-appointment .ui-datepicker-next {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	margin: 5px;
-	width: 20px; line-height: 15px;
-	border: 1px solid #999;
-	border-radius: 3px;
-	text-align: center;
-	box-shadow: inset 0px -2px 5px rgba(255,255,255,0.5);
-	cursor: pointer;
-}
-
-.book-appointment .ui-datepicker-next {
-	left: auto;
-	right: 0px;
-}
-
 .book-appointment .summary {
 	position: absolute;
 	bottom: 0px;
@@ -2690,4 +2621,81 @@ a.linkedin {
 	background: #999;
 	color: #bbb;
 	cursor: default;
+}
+
+/* create-popup datepickers */
+
+.ui-datepicker {
+	display: none;
+	position: relative;
+	width: 180px;
+	margin: 10px 0px;
+	padding: 5px;
+	border: 2px #999 solid;
+	border-radius: 3px;
+	background: #f5f5f5;
+}
+
+.ui-datepicker-title {
+	font-weight: bold;
+	text-align: center;
+	padding: 1px 30px 5px;
+	font-size: 13px;
+	font-family: 'News Gothic MT W01 Bold', sans-serif;
+}
+
+.ui-datepicker table {
+	width: 100%;
+	font-size: 13px;
+	font-family: 'NewsGothicNo.2W01-Roman', sans-serif;
+}
+
+.ui-datepicker th {
+	text-align: center;
+	padding: 5px 0px;
+}
+
+.ui-datepicker td {
+	padding: 0px;
+	border: 1px solid #999;
+	background: #fff;
+	text-align: center;
+}
+
+.ui-datepicker table a {
+	padding: 5px;
+	display: block;
+	text-decoration: none;
+	color: #002e9a;
+}
+
+.ui-datepicker .ui-datepicker-unselectable {
+	padding: 5px;
+}
+
+.ui-datepicker .ui-datepicker-other-month {
+	background: #ddd;
+}
+
+.ui-datepicker .ui-state-active {
+	background: #002e9a;
+	color: #fff;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: 5px;
+	width: 20px; line-height: 15px;
+	border: 1px solid #999;
+	border-radius: 3px;
+	text-align: center;
+	box-shadow: inset 0px -2px 5px rgba(255,255,255,0.5);
+	cursor: pointer;
+}
+
+.ui-datepicker-next {
+	left: auto;
+	right: 0px;
 }

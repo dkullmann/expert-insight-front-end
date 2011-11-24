@@ -168,7 +168,7 @@
 
 		</header>
 
-		<div class="create-schedule content">
+		<div class="create-schedule create-popup">
 
 			<h2>Create Schedule</h2>
 			
@@ -346,17 +346,19 @@
 					<p>Let EI know the dates you won&rsquo;t be available.</p>
 					
 					<h4>New suspension</h4>
-					<input class='date' placeholder='Start date' />
-					<input class='date' placeholder='End date' />
-					<button class='suspend'>Suspend</button>
+					<input id='start-date' placeholder='Start date' />
+					<input id='end-date' placeholder='End date' />
+					<button class='suspend' disabled>Suspend</button>
 					
 					<h4>Scheduled suspensions</h4>
-					<ol>
-						<!--<li>No suspensions currently scheduled!</li>-->
+					<ol class='items'>
+						<li class='none'>No suspensions currently scheduled!</li>
+						<!--
 						<li>
 							<span><time>11/04/2011</time> - <time>11/21/2011</time></span>
 							<a class='delete'>delete</a>
 						</li>
+						-->
 					</ol>
 					
 					<button class='save'>Save</button>
