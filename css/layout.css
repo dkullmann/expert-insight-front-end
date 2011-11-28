@@ -2455,7 +2455,7 @@ a.linkedin {
 	float: left;
 }
 
-.create-schedule #template li {
+.create-schedule #template #week > li {
 	float: left;
 	width: 95px;
 	margin-left: 15px;
@@ -2464,16 +2464,44 @@ a.linkedin {
 	list-style: none;
 }
 
-.create-schedule #template li:first-child {
+.create-schedule #template #week li:first-child {
 	margin: 0px;
 	padding: 0px;
 	border: none;
 }
 
+.create-schedule #template #week ol {
+	margin-top: 15px;
+}
+
+.create-schedule #template #week li li {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px dotted #ddbb92;
+	list-style: none;
+	overflow: hidden;
+}
+
+.create-schedule #template #week li li:first-child {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.create-schedule #template label {
+	width: 30px;
+	float: left;
+	clear: left;
+	font-size: 12px;
+	line-height: 20px;
+}
+
 .create-schedule #template select {
 	display: block;
-	width: 95px;
-	margin-bottom: 5px;
+	width: 65px;
+	margin: 0px 0px 5px;
+	float: left;
+	outline: none;
 }
 
 .create-schedule #template .add-block {
@@ -2481,6 +2509,7 @@ a.linkedin {
 	margin-top: 10px;
 	font-size: 14px;
 	color: #91A13E;
+	clear: both;
 }
 
 .create-schedule #suspensions {
@@ -2698,4 +2727,104 @@ a.linkedin {
 .ui-datepicker-next {
 	left: auto;
 	right: 0px;
+}
+
+/* create schedule (alt) */
+
+#template #week-grid {
+	overflow: hidden;
+}
+
+#template #week-grid > li {
+	width: 116px;
+	float: left;
+	list-style: none;
+	margin-left: 2px;
+}
+
+#template #week-grid h3 {
+	text-align: center;
+}
+
+#template #week-grid ol {
+	margin-top: 10px;
+}
+
+#template #week-grid li li {
+	display: block;
+	float: none;
+	width: auto;
+	margin: 0px;
+	border: none;
+	height: 6px;
+	text-indent: -9999px; font-size: 0px; line-height: 0;
+	background: rgba(135,154,40,0.1);
+}
+
+#template #week-grid li li:hover {
+	box-shadow: inset 0px 0px 10px #fff;
+}
+
+#template #week-grid li li.available {
+	background: rgba(135,154,40,0.5);
+}
+
+#template #week-grid li li.ui-selecting {
+	background: rgba(135,154,40,0.3);
+}
+
+#template #week-grid li li.available.ui-selecting {
+	background: rgba(135,154,40,0.4);
+}
+
+#template #week-grid li li:nth-child(even) {
+	margin-bottom: 1px;
+}
+
+#template .template-planner {
+	position: relative;
+	padding-left: 30px;
+}
+
+#template .template-planner .guides {
+	width: 30px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+#template .template-planner .guides li {
+	line-height: 13px;
+	font-size: 10px;
+	list-style: none;
+}
+
+#template .controls {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	font-size: 14px;
+	margin: 20px;
+}
+
+#template .controls a {
+	display: inline-block;
+	margin-left: 5px;
+	padding: 5px;
+	border: 1px solid #eee;
+	background: #fefefe;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#template .controls a.active {
+	border-color: #879A2A;
+	color: #879A2A;
+	background: rgba(135,154,40,0.1);
+}
+
+.ui-selectable-helper {
+	position: absolute;
+	background: rgba(255,255,255,0.1);
+	border: 1px solid rgba(255,255,255,0.4);
 }
